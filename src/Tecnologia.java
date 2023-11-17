@@ -3,10 +3,12 @@ import java.util.Scanner;
 public class Tecnologia extends  Producto{
 
     private String garantia;
+    private int vidaUtil;
 
-    public Tecnologia(String nombre, double precio, String codigo, String marca, int cantidad, String garantia) {
+    public Tecnologia(String nombre, double precio, String codigo, String marca, int cantidad, String garantia, int vidaUtil) {
         super(nombre, precio, codigo, marca, cantidad);
         this.garantia = garantia;
+        this.vidaUtil = vidaUtil;
     }
 
     public Tecnologia() {
@@ -40,11 +42,22 @@ public class Tecnologia extends  Producto{
 
     }
 
+
+
+
     public String getGarantia() {
         return garantia;
     }
 
     public void setGarantia(String garantia) {
         this.garantia = garantia;
+    }
+
+    public int getVidaUtil() {
+        return vidaUtil;
+    }
+
+    public void setVidaUtil(int vidaUtil) {
+        this.vidaUtil = vidaUtil;
     }
 }

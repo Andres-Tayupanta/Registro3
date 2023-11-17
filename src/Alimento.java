@@ -30,9 +30,9 @@ public class Alimento extends Producto{
         System.out.println("Ingrese la marca del producto:");
         this.marca = sc.next();
         System.out.println("Ingrese la fecha de elaboracion del producto:");
-        this.fechaElaboracion = sc.nextLine();
+        this.fechaElaboracion = sc.next();
         System.out.println("Ingrese la fecha de caducidad del producto:");
-        this.fechaExpiracion = sc.nextLine();
+        this.fechaExpiracion = sc.next();
         System.out.println("Ingrese la cantidad del producto:");
         this.cantidad = sc.nextInt();
 
@@ -56,7 +56,7 @@ public class Alimento extends Producto{
         System.out.println("Cantidad del producto:"+cantidad);
         System.out.println("Elaboracion:"+fechaElaboracion);
         System.out.println("Caducidad:"+fechaExpiracion);
-        System.out.println("Ingredinetes"+listaIngredientes);
+        System.out.println("Ingredientes:"+listaIngredientes);
     }
 
 

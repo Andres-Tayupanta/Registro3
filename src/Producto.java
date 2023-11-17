@@ -44,6 +44,11 @@ public class Producto {
 
     }
 
+    public void TotalPrecio(){
+        double total =precio*cantidad;
+        System.out.println("El total a pagar es:"+total);
+    }
+
     public String getNombre() {
         return nombre;
     }
